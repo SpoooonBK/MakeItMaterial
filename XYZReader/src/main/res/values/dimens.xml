@@ -1,7 +1,6 @@
 <resources>
     <!-- detail -->
-    <dimen name="detail_title_text_size">32sp</dimen>
-    <dimen name="detail_body_text_size">22sp</dimen>
+    <dimen name="detail_title_text_size">20sp</dimen>
     <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
 
     <dimen name="fab_elevation">2dp</dimen>
@@ -9,6 +8,11 @@
     <dimen name="fab_margin">24dp</dimen>
     
     <dimen name="keyline_edge">16dp</dimen>
-    <dimen name="keyline_inset_left">72dp</dimen>
+    <dimen name="keyline_inset">72dp</dimen>
+
+    <!--This dimension is double the standard action bar size -->
+    <dimen name="keyline_below_action_bar">112dp</dimen>
+
+    <dimen name="vertical_separator_space">8dp</dimen>
 
 </resources>

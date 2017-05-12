@@ -140,7 +140,6 @@ public class ArticleDetailFragment extends Fragment implements
         }
         Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.detail_toolbar);
         TextView bodyView = (TextView) mRootView.findViewById(R.id.detail_body);
-        bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
 
         if (mCursor != null) {
             mRootView.setAlpha(0);
