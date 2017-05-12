@@ -15,27 +15,33 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
+
+    <!--/Iconic Styles based off of Icon palette/-->
+    <style name="Theme.Iconic" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
     </style>
 
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-
-    <style name="Iconic_TitleBar">
+    <style name="Theme.Iconic.TitleBar">
         <item name="android:background">@color/primary</item>
+        <item name="android:text" tools:targetApi="m">@color/icons</item>
     </style>
-    <style name="Iconic_Header">
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+
+    <style name="Theme.Iconic.Header">
         <item name="android:textColor">@color/icons</item>
     </style>
-    <style name="Iconic_Subheading">
-        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
-        <item name="android:textColor">@color/secondary_text</item>
 
+    <style name="Theme.Iconic.Subheading">
+        <item name="android:textColor">@color/secondary_text</item>
     </style>
+
+    <style name="Theme.Iconic.Body">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
 
 </resources>

@@ -32,6 +32,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import timber.log.Timber;
+
 /**
  * An activity representing a list of Articles. This activity has different presentations for
  * handset and tablet-size devices. On handsets, the activity presents a list of items, which when
@@ -56,6 +58,8 @@ public class ArticleListActivity extends ActionBarActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
+
+        Timber.plant(new Timber.DebugTree());
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
