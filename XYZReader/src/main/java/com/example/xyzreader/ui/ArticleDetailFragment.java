@@ -1,6 +1,7 @@
 package com.example.xyzreader.ui;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.LoaderManager;
 import android.content.Intent;
 import android.content.Loader;
@@ -28,6 +29,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -139,6 +141,13 @@ public class ArticleDetailFragment extends Fragment implements
         }
         Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.detail_toolbar);
         TextView bodyView = (TextView) mRootView.findViewById(R.id.detail_body);
+        ImageButton upButton = (ImageButton)mRootView.findViewById(R.id.action_up);
+        upButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
 
         if (mCursor != null) {
             mRootView.setAlpha(0);
