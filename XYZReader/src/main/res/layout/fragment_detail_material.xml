@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/primary_light">
+    android:background="@color/white">
 
 
 
@@ -43,13 +43,13 @@
                 app:layout_collapseMode="pin">
 
                 <ImageButton
-                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                     android:id="@+id/action_up"
                     android:layout_width="56dp"
                     android:layout_height="?actionBarSize"
                     android:background="?selectableItemBackgroundBorderless"
                     android:contentDescription="@string/up"
-                    android:src="@drawable/ic_arrow_back" />
+                    android:src="@drawable/ic_arrow_back"
+                    />
                 </android.support.v7.widget.Toolbar>
 
 
@@ -89,11 +89,11 @@
         android:id="@+id/share_fab"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:background="@color/accent"
         android:src="@drawable/ic_share"
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="@dimen/keyline_edge"
         android:layout_marginEnd="@dimen/keyline_edge"
+        android:contentDescription="@string/action_share"
         />
 
 
