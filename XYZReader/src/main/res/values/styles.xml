@@ -18,7 +18,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
 
-
     <!--/Iconic Styles based off of Icon palette/-->
     <style name="Base.Theme.Iconic" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
@@ -49,12 +48,6 @@
         <item name="android:background">@color/white</item>
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
     </style>
-
-
-
-
-
-
 
 
 </resources>
