@@ -67,6 +67,8 @@ public class ArticleDetailFragment extends Fragment implements
     TextView mBodyText;
     @BindView(R.id.share_fab)
     FloatingActionButton mFloatingActionButton;
+    @BindView(R.id.up_button)
+    ImageButton mUpButton;
 
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.sss");
@@ -123,8 +125,8 @@ public class ArticleDetailFragment extends Fragment implements
         ButterKnife.bind(this, mRootView);
 
 
-        ((AppCompatActivity) getActivity()).setSupportActionBar(mToolbar);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        ((AppCompatActivity) getActivity()).setSupportActionBar(mToolbar);
+//        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 
@@ -234,5 +236,10 @@ public class ArticleDetailFragment extends Fragment implements
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @OnClick(R.id.up_button)
+    public void onClickUpButton(){
+        getActivity().onBackPressed();
     }
 }

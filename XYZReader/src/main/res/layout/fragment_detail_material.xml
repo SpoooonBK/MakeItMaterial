@@ -35,7 +35,16 @@
                 app:layout_scrollFlags="scroll|enterAlways"
                 android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 android:elevation="4dp"
-                app:layout_collapseMode="pin"/>
+                app:layout_collapseMode="pin">
+
+                <ImageButton
+                    android:id="@+id/up_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/ic_arrow_back"
+                    android:clickable="true"
+                    android:layout_marginRight="@dimen/detail_inner_horiz_margin"/>
+                </android.support.v7.widget.Toolbar>
 
 
         </android.support.design.widget.CollapsingToolbarLayout>
